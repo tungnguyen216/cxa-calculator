@@ -1,0 +1,19 @@
+@import 'src/scss/variables';
+
+.calculator {
+  width: $calc-width;
+  border: 1px solid $border-color;
+}
+
+.operation-board {
+  display: flex;
+  flex-wrap: wrap;
+
+  .left {
+    width: 75%;
+  }
+
+  .right {
+    width: 25%;
+  }
+}

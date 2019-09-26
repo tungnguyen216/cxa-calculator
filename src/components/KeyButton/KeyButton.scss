@@ -1,0 +1,22 @@
+@import 'src/scss/variables';
+
+.keybutton {
+  border: 1px solid $border-color;
+  width: calc(#{$calc-width} / 4);
+  height: calc(#{$calc-width} / 4);
+  font-size: 30px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &--large {
+    width: calc(#{$calc-width} / 4 * 3);
+  }
+
+  &--color {
+    background: $operation-bgcolor;
+    color: $white;
+  }
+}

@@ -1,0 +1,27 @@
+@import 'src/scss/variables';
+
+.screen {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 10px;
+  border: 1px solid $border-color;
+  background: $screen-bgcolor;
+  color: $white;
+  font-size: 40px;
+  text-align: right;
+  line-height: 1;
+  min-height: 75px;
+
+  &.small {
+    font-size: 14px;
+
+    .screen__content {
+      white-space: unset;
+    }
+  }
+
+  &__content {
+    white-space: nowrap;
+  }
+}
